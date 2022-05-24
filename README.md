@@ -8,4 +8,3 @@
 3. Lombok Plugin
 4. MYSQL 8 or later
 5. Pre-created 'aegis' database
-1
