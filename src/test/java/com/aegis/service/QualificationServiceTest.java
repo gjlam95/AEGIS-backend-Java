@@ -30,8 +30,8 @@ class QualificationServiceTest {
 
     @BeforeAll
     public static void init() {
-        q1 = new Qualification("Q1", true);
-        q2 = new Qualification("Q2", false);
+        q1 = new Qualification("Q1");
+        q2 = new Qualification("Q2");
     }
 
     @Test

@@ -21,7 +21,7 @@ public class Qualification {
 
     //@NonNull for the RequiredArgConstructor
     @NonNull private String name;
-    @NonNull private boolean qualified;
+    private boolean qualified;
 
     @OneToMany(mappedBy = "qualification")
     private Set<QualificationMemberJoin> qualificationMemberQuantity;

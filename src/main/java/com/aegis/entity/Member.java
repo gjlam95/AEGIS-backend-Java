@@ -34,7 +34,6 @@ public class Member {
     @NonNull
     private String role;
 
-    @NonNull
     private int duty_count;
 
     @OneToMany(mappedBy = "member")

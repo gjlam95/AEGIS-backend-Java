@@ -33,9 +33,9 @@ class QualificationControllerTest {
 
     @BeforeAll
     public static void init() {
-        q1 = new Qualification("Q1", true);
-        q2 = new Qualification("Q2", true);
-        q3 = new Qualification("Q3", false);
+        q1 = new Qualification("Q1");
+        q2 = new Qualification("Q2");
+        q3 = new Qualification("Q3");
 
     }
 

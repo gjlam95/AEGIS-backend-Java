@@ -8,6 +8,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.*;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -23,6 +24,7 @@ public class QualificationControllerTestIT {
     private static Qualification q4;
     private static Qualification q5;
 
+    @LocalServerPort
     private int port;
 
     @Autowired
@@ -30,11 +32,11 @@ public class QualificationControllerTestIT {
 
     @BeforeAll
     public static void init() {
-        q1 = new Qualification("P1", true);
-        q2 = new Qualification("P2", true);
-        q3 = new Qualification("P3", false);
-        q4 = new Qualification("P4", false);
-        q5 = new Qualification("P5", false);
+        q1 = new Qualification("Q1");
+        q2 = new Qualification("Q2");
+        q3 = new Qualification("Q3");
+        q4 = new Qualification("Q4");
+        q5 = new Qualification("Q5");
     }
 
     @Test
